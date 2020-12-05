@@ -13,7 +13,7 @@ if(document.title == "home"){
   //button event for creating a profile 
   document.getElementById("create_profile").
   addEventListener("click", function(e){
-    window.location.replace('http://localhost:3000/complete_profile');
+    window.location.replace('https://trainer-atlas.herokuapp.com/complete_profile');
   });
 
   //button event for displaying a dog 
@@ -59,13 +59,13 @@ if(document.title == "home"){
   //button event for logging out 
   document.getElementById("logout").
   addEventListener("click", function(e){
-    window.location.replace('http://localhost:3000/logout');
+    window.location.replace('https://trainer-atlas.herokuapp.com/logout');
   });
 
   //button event for viewing profile 
   document.getElementById("view_profile").
   addEventListener("click", function(e){
-    window.location.replace('http://localhost:3000/profile_page');
+    window.location.replace('https://trainer-atlas.herokuapp.com/profile_page');
   });
   
 }
@@ -120,7 +120,7 @@ if(document.title == "complete_profile"){
     }
   //PUT- /films
   editProf();
-  window.location.replace('http://localhost:3000/home');
+  window.location.replace('https://trainer-atlas.herokuapp.com/home');
   },false);
   }
 
