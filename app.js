@@ -6,7 +6,7 @@ var logger = require('morgan');
 const mongoose = require('mongoose');
 const dotenv = require('dotenv');
 const session = require('express-session');
-
+const MONGODB_URI = 'mongodb://brp221:zd20dNXxHq3v6mt9@traineratlascluster-shard-00-00.spuyu.mongodb.net:27017,traineratlascluster-shard-00-01.spuyu.mongodb.net:27017,traineratlascluster-shard-00-02.spuyu.mongodb.net:27017/TrainerAtlasDB?ssl=true&replicaSet=atlas-133zln-shard-0&authSource=admin&retryWrites=true&w=majority' ;
 //const cookieSession = require("cookie-session")
 var findOrCreate = require('mongoose-findorcreate');
 const passport = require('passport');
@@ -29,7 +29,7 @@ var app = express();
  */
 mongoose.Promise = global.Promise;
 
-mongoose.connect(process.env.MONGODB_URI, { useNewUrlParser: true });
+mongoose.connect(MONGODB_URI, { useNewUrlParser: true });
 mongoose.connection.on('error', (err) => {
   console.error(err);
   console.log('%s MongoDB connection error. Please make sure MongoDB is running.');
