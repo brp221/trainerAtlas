@@ -39,7 +39,7 @@ if(document.title == "home"){
   addEventListener("click", function(e){
     //AJAX POST REQUEST 
     const deleteUser = async () => {
-      const response = await fetch('http://localhost:3000/home', {
+      const response = await fetch('https://trainer-atlas.herokuapp.com/home', {
         method: 'DELETE',
         //body: JSON.stringify(userObject), // string or object
         headers: {
@@ -106,7 +106,7 @@ if(document.title == "complete_profile"){
     
     //AJAX PUT REQUEST 
     const editProf = async () => {
-      const response = await fetch('http://localhost:3000/complete_profile', {
+      const response = await fetch('https://trainer-atlas.herokuapp.com/complete_profile', {
         method: 'PUT',
         body: JSON.stringify(userObject), // string or object
         headers: {
