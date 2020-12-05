@@ -53,7 +53,7 @@ if(document.title == "home"){
     }
   //POST - /films
   deleteUser();
-  window.location.replace('http://localhost:3000/');
+  window.location.replace('https://trainer-atlas.herokuapp.com/');
   },false);
 
   //button event for logging out 
