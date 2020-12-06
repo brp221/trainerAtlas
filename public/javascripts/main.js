@@ -75,7 +75,6 @@ if(document.title == "complete_profile"){
   addEventListener("click", function(e){
     var Name = document.getElementById("users_name2").value;
     var Username = document.getElementById("username2").value;
-    var Email = document.getElementById("email2").value;
     let UserType = null;
     let Experience = null;
     //radio buttons for User Type
@@ -101,7 +100,7 @@ if(document.title == "complete_profile"){
     var Bio = document.getElementById("bio2").value;
     var Goals = document.getElementById("goals2").value;
 
-    let userObject = {"Username": Username, "Name":Name, "Email":Email , "UserType": UserType, "Experience":Experience, "Bio": Bio, "Goals": Goals}
+    let userObject = {"Username": Username, "Name":Name, "UserType": UserType, "Experience":Experience, "Bio": Bio, "Goals": Goals}
     console.log(userObject)
     
     //AJAX PUT REQUEST 
