@@ -1,10 +1,6 @@
 const express = require('express');
 const User = require('../models/User.js');
-const passport = require('passport');
-var userProfile;
 const router = express.Router();
-const dotenv = require('dotenv');
-const GoogleStrategy = require('passport-google-oauth').OAuth2Strategy;
 
 
 /* PUT URL Path /complete_profile/.  */

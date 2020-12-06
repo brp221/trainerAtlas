@@ -119,7 +119,7 @@ if(document.title == "complete_profile"){
     }
   //PUT- /films
   editProf();
-  window.location.replace('https://trainer-atlas.herokuapp.com/home');
+  //window.location.replace('https://trainer-atlas.herokuapp.com/home');
   },false);
   }
 
