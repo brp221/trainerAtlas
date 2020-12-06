@@ -10,7 +10,7 @@ router.put('/', async function(req,res,next){
   console.log("PUT USER EMAIL:" , req.session.passport.user);
   var name = req.body.Name;
   var username = req.body.Username;
-  //var email = req.body.Email;
+  var email = req.session.passport.user;
   var user_type = req.body.UserType;
   var experience = req.body.Experience;
   var goals = req.body.Goals 
